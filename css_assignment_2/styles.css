@@ -1,3 +1,69 @@
 body {
     background: #FFFFFF;
+    font-family: "Lato", serif;
+}
+
+header {
+    border-bottom: 8px solid #999999;
+    padding: 0 24px 64px;
+}
+
+header h1 {
+    font-weight: 800;
+    font-size: 2rem;
+    margin-top: 96px;
+}
+
+header p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+span {
+    font-weight: 800;
+    color: #039966;
+}
+
+.first-header-paragraph {
+    margin: 3rem 0 1rem;
+}
+
+.second-header-paragraph {
+    margin: 1rem 0;
+}
+
+main {
+    padding-top: 72px;
+    min-height: fit-content;
+    background: #666666;
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding-top: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.banner {
+    width: 374px;
+    background-color: #FFBF00;
+    border-bottom: 8px solid #CC9900;
+}
+
+.banner h2 {
+    margin: 0;
+    padding: 12px 24px;
+    line-height: 28.8px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.first-main-paragraph {
+    margin: 22px 24px 16px;
+}
+
+.second-main-paragraph {
+    margin: 16px 24px;
 }
