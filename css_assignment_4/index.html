@@ -26,8 +26,61 @@
                     <label>First Name</label>
                     <input type="text">
                 </div>
+                <div class="input-container">
+                    <label>Last Name</label>
+                    <input type="text">
+                </div>
+                <div class="input-container">
+                    <label for="gender">Gender</label>
+                    <div class="select-wrapper">
+                        <select name="gender" id="gender">
+                            <option value="" disabled selected hidden>Select here
+                            </option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                        </select>
+                        <img src="./assets/angle-down.png">
+                    </div>
+                </div>
+                <div class="input-container">
+
+                    <label>Date of Birth</label>
+                    <div class="text-wrapper">
+                        <input type="date" placeholder="Select here" onfocus="(this.type='date')"
+                            onblur="(this.type='text')">
+                        <img src="./assets/calendar.png">
+                    </div>
+                </div>
+                <div class="input-container">
+                    <label>Weight (KG)</label>
+                    <input type="number" placeholder="Enter Weight">
+                </div>
+                <div class="input-container">
+                    <label>Height (CM)</label>
+                    <input type="number" placeholder="Enter height here.. ">
+                </div>
+                <div class="input-container">
+                    <label for="gender">Activity</label>
+                    <div class="select-wrapper">
+                        <select name="activity" id="activity">
+                            <option value="" disabled selected hidden>Select here
+                            </option>
+                        </select>
+                        <img src="./assets/angle-down.png">
+                    </div>
+                </div>
+                <div class="input-container">
+                    <label>Password</label>
+                    <div class="text-wrapper">
+                        <input type="text">
+                        <img src="./assets/show.png">
+                    </div>
+                    <button>Register</button>
             </form>
         </section>
+        <div class="conditions-container">
+            <p>By clicking Register, you agree to our <span>Terms of Use</span> and our <span>Privacy Policy</span></p>
+        </div>
     </main>
 </body>
 

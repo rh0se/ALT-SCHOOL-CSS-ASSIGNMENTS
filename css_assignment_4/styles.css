@@ -65,7 +65,7 @@ section {
 }
 
 form {
-    padding: 24px 16px;
+    padding: 24px 16px 1px;
 }
 
 .input-container {
@@ -74,6 +74,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    margin-bottom: 24px;
 }
 
 .input-container label {
@@ -85,13 +86,110 @@ form {
 .input-container input {
     font-family: 'Sofia Pro Regular', sans-serif;
     border: 1px solid #F0F0F0;
+    line-height: 20px;
     color: #011C34;
     padding: 14px 16px;
     border-radius: 2px;
+}
+
+.input-container select {
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
 }
 
 .input-container input:focus {
     outline: none;
     border: 1px solid #2EC4B6;
 
+}
+
+.select-wrapper,
+.text-wrapper {
+    position: relative;
+}
+
+
+.text-wrapper input {
+    width: 88.5%;
+    font-family: 'Sofia Pro Regular', sans-serif;
+    border: 1px solid #F0F0F0;
+    color: #011C34;
+    padding: 14px 16px;
+    border-radius: 2px;
+    line-height: 20px;
+}
+
+.select-wrapper select {
+    width: 100%;
+    font-family: 'Sofia Pro Regular', sans-serif;
+    border: 1px solid #F0F0F0;
+    color: #737373;
+    padding: 14px 16px;
+    border-radius: 2px;
+    line-height: 20px;
+}
+
+input::placeholder {
+    color: #737373;
+    font-family: 'Sofia Pro Light', sans-serif;
+    font-weight: 300;
+}
+
+.select-wrapper img,
+.text-wrapper img {
+    position: absolute;
+    top: 16px;
+    right: 14px;
+
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.select-wrapper select:disabled {
+    color: #737373;
+    font-family: 'Sofia Pro Light';
+}
+
+button {
+    color: #FFFFFF;
+    border: none;
+    margin-top: 30px;
+    background: #2EC4B6;
+    font-family: 'Sofia Pro SemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    box-shadow: 0px 10px 40px 0px #0000001A;
+    padding: 16px 0;
+}
+
+.conditions-container {
+    font-family: 'Sofia Pro Regular', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 84.2%;
+    margin: auto;
+}
+
+.conditions-container span {
+    color: #2EC4B6;
+    font-family: 'Sofia Pro Medium' sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: Auto;
 }
