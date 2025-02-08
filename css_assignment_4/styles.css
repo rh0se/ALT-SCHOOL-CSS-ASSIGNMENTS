@@ -27,20 +27,29 @@ body {
 }
 
 header {
-    padding-left: 15px;
     margin-top: 72px;
 }
 
-header div img {
+
+header div picture img {
+    margin: auto 0 0 12px;
+    width: 15.7%;
     object-fit: contain;
 }
 
+main,
+.right-container {
+    background-color: #F7FDFC;
+}
+
 .form-header {
-    padding-left: 24px;
     color: #000B0A;
 }
 
 .form-header h1 {
+    margin-right: auto;
+    margin-left: auto;
+    width: 87.2%;
     font-family: 'BrownBold', sans-serif;
     font-weight: 700;
     font-size: 30px;
@@ -49,7 +58,9 @@ header div img {
 }
 
 .form-header p {
-    width: 327px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 87.2%;
     margin-top: 12px;
     color: #737373;
     font-family: 'Brown-Light', sans-serif;
@@ -65,10 +76,11 @@ section {
 }
 
 form {
-    padding: 24px 16px 1px;
+    padding: 24px 16px;
 }
 
 .input-container {
+    max-width: 100%;
     font-family: 'Sofia Pro SemiBold', sans-serif;
     color: #011C34;
     display: flex;
@@ -76,6 +88,9 @@ form {
     gap: 8px;
     margin-bottom: 24px;
 }
+
+
+
 
 .input-container label {
     font-size: 14px;
@@ -109,22 +124,23 @@ form {
 .select-wrapper,
 .text-wrapper {
     position: relative;
+    width: 100%;
+    display: flex;
 }
 
 
 .text-wrapper input {
-    width: 88.5%;
+    width: 100%;
     font-family: 'Sofia Pro Regular', sans-serif;
     border: 1px solid #F0F0F0;
     color: #011C34;
-    padding: 14px 16px;
     border-radius: 2px;
     line-height: 20px;
 }
 
 .select-wrapper select {
     width: 100%;
-    font-family: 'Sofia Pro Regular', sans-serif;
+    font-family: 'Sofia Pro Light', sans-serif;
     border: 1px solid #F0F0F0;
     color: #737373;
     padding: 14px 16px;
@@ -141,9 +157,9 @@ input::placeholder {
 .select-wrapper img,
 .text-wrapper img {
     position: absolute;
-    top: 16px;
+    top: 50%;
     right: 14px;
-
+    transform: translateY(-50%);
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -156,6 +172,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 button {
+    width: 100%;
     color: #FFFFFF;
     border: none;
     margin-top: 30px;
@@ -192,4 +209,114 @@ button {
     text-decoration: underline;
     text-decoration-style: solid;
     text-decoration-thickness: Auto;
+}
+
+@media (min-width: 1024px) {
+    .sign-up-container {
+        width: 81%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header {
+        width: 35.49%;
+        margin-top: 0;
+    }
+
+    picture {
+        margin: 0;
+    }
+
+    header div picture img {
+        width: 77.3px;
+        height: 80px;
+        padding-left: 0;
+        margin: 0 auto 0 -5px;
+        object-fit: contain;
+    }
+
+    .form-header {
+        color: #000B0A;
+    }
+
+    .form-header h1 {
+        font-family: 'BrownBold', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        margin: 50px 0 0;
+    }
+
+    .form-header p::before {}
+
+    .form-header p {
+        font-weight: 400;
+        margin: 0;
+        width: 100%;
+        margin-top: 20px;
+        font-size: 16px;
+        font-family: 'Brown', sans-serif;
+        line-height: 25px;
+    }
+
+    main {
+        border-radius: 6px;
+        width: 50%;
+        margin-top: 81px;
+    }
+
+    .right-container {
+        background-color: #FFFFFF !important;
+        border-radius: 6px;
+    }
+
+    section {
+        background-color: #FFFFFF;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        margin: 0;
+        width: 100%;
+        box-shadow: 0px 4px 50px 0px #0408131A;
+    }
+
+    form {
+        padding: 40px 40px 16px;
+    }
+
+    .conditions-container {
+        background-color: #FFFFFF;
+        width: 100%;
+    }
+
+    .conditions-container p {
+        margin: 0;
+    }
+
+    .grid-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        row-gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .input-container {
+        margin-bottom: 30px;
+    }
+
+    .grid-container .input-container {
+        min-width: 50%;
+        margin-bottom: 0;
+    }
+
+    button {
+        margin-top: 0;
+    }
+
+    .conditions-container p {
+        padding-bottom: 40px;
+    }
 }

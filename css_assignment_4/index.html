@@ -10,77 +10,97 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <img src="./assets/mobileLogo.png" alt="logo">
-        </div>
-    </header>
-    <main>
-        <div class="form-header">
-            <h1>For Individuals</h1>
-            <p>Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.</p>
-        </div>
-        <section class="form-section">
-            <form>
-                <div class="input-container">
-                    <label>First Name</label>
-                    <input type="text">
-                </div>
-                <div class="input-container">
-                    <label>Last Name</label>
-                    <input type="text">
-                </div>
-                <div class="input-container">
-                    <label for="gender">Gender</label>
-                    <div class="select-wrapper">
-                        <select name="gender" id="gender">
-                            <option value="" disabled selected hidden>Select here
-                            </option>
-                            <option value="female">Female</option>
-                            <option value="male">Male</option>
-                        </select>
-                        <img src="./assets/angle-down.png">
-                    </div>
-                </div>
-                <div class="input-container">
+    <div class="sign-up-container">
+        <header>
+            <div>
+                <picture>
+                    <source media="(min-width:650px)" srcset="./assets/DesktopLogo.png">
 
-                    <label>Date of Birth</label>
-                    <div class="text-wrapper">
-                        <input type="date" placeholder="Select here" onfocus="(this.type='date')"
-                            onblur="(this.type='text')">
-                        <img src="./assets/calendar.png">
-                    </div>
+                    <img src="./assets/mobileLogo.png" alt="logo">
+                </picture>
+
+            </div>
+            <div class="form-header">
+                <h1>For Individuals</h1>
+                <p>Start benefiting from the wellness experience. For companies looking on increasing productivity, and
+                    improving
+                    organization wellness..</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="right-container">
+                <section class="form-section">
+                    <form>
+                        <div class="grid-container">
+                            <div class="input-container">
+                                <label>First Name</label>
+                                <input type="text">
+                            </div>
+                            <div class="input-container">
+                                <label>Last Name</label>
+                                <input type="text">
+                            </div>
+                            <div class="input-container">
+                                <label for="gender">Gender</label>
+                                <div class="select-wrapper">
+                                    <select name="gender" id="gender">
+                                        <option value="" disabled selected hidden>Select here
+                                        </option>
+                                        <option value="female">Female</option>
+                                        <option value="male">Male</option>
+                                    </select>
+                                    <img src="./assets/angle-down.png">
+                                </div>
+                            </div>
+                            <div class="input-container">
+
+                                <label>Date of Birth</label>
+                                <div class="text-wrapper">
+                                    <input type="date" placeholder="Select here" onfocus="(this.type='date')"
+                                        onblur="(this.type='text')">
+                                    <img src="./assets/calendar.png">
+                                </div>
+                            </div>
+                            <div class="input-container">
+                                <label>Weight (KG)</label>
+                                <input type="number" placeholder="Enter Weight">
+                            </div>
+                            <div class="input-container">
+                                <label>Height (CM)</label>
+                                <input type="number" placeholder="Enter height here.. ">
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <label for="gender">Activity</label>
+                            <div class="select-wrapper">
+                                <select name="activity" id="activity">
+                                    <option value="" disabled selected hidden>Select here
+                                    </option>
+                                </select>
+                                <img src="./assets/angle-down.png">
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <label>Password</label>
+                            <div class="text-wrapper">
+                                <input type="text">
+
+                                <img src="./assets/show.png">
+                            </div>
+
+                        </div>
+                        <button>Register</button>
+                    </form>
+                </section>
+                <div class="conditions-container">
+                    <p>By clicking Register, you agree to our <span>Terms of Use</span> and our <span>Privacy
+                            Policy</span>
+                    </p>
                 </div>
-                <div class="input-container">
-                    <label>Weight (KG)</label>
-                    <input type="number" placeholder="Enter Weight">
-                </div>
-                <div class="input-container">
-                    <label>Height (CM)</label>
-                    <input type="number" placeholder="Enter height here.. ">
-                </div>
-                <div class="input-container">
-                    <label for="gender">Activity</label>
-                    <div class="select-wrapper">
-                        <select name="activity" id="activity">
-                            <option value="" disabled selected hidden>Select here
-                            </option>
-                        </select>
-                        <img src="./assets/angle-down.png">
-                    </div>
-                </div>
-                <div class="input-container">
-                    <label>Password</label>
-                    <div class="text-wrapper">
-                        <input type="text">
-                        <img src="./assets/show.png">
-                    </div>
-                    <button>Register</button>
-            </form>
-        </section>
-        <div class="conditions-container">
-            <p>By clicking Register, you agree to our <span>Terms of Use</span> and our <span>Privacy Policy</span></p>
-        </div>
+            </div>
+    </div>
+
     </main>
 </body>
 
