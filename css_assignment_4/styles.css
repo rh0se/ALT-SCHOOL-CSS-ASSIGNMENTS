@@ -1,0 +1,97 @@
+@import url(./assets/fonts/sofia-pro-webfont/style.css);
+
+@font-face {
+    font-family: "Brown";
+    src: url("./assets/fonts/Brown-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BrownBold";
+    src: url("./assets/fonts/Brown-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BrownLight";
+    src: url("./assets/fonts/Brown-Light.otf") format("opentype");
+    font-weight: 300;
+}
+
+body {
+    margin: 0;
+    background-color: #F7FDFC;
+    font-family: "Brown", sans-serif;
+}
+
+header {
+    padding-left: 15px;
+    margin-top: 72px;
+}
+
+header div img {
+    object-fit: contain;
+}
+
+.form-header {
+    padding-left: 24px;
+    color: #000B0A;
+}
+
+.form-header h1 {
+    font-family: 'BrownBold', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+.form-header p {
+    width: 327px;
+    margin-top: 12px;
+    color: #737373;
+    font-family: 'Brown-Light', sans-serif;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+section {
+    background-color: #FFFFFF;
+    margin: 40px auto 0;
+    width: 87.2%;
+    box-shadow: 0px 4px 50px 0px #0408131A;
+}
+
+form {
+    padding: 24px 16px;
+}
+
+.input-container {
+    font-family: 'Sofia Pro SemiBold', sans-serif;
+    color: #011C34;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-container label {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+}
+
+.input-container input {
+    font-family: 'Sofia Pro Regular', sans-serif;
+    border: 1px solid #F0F0F0;
+    color: #011C34;
+    padding: 14px 16px;
+    border-radius: 2px;
+}
+
+.input-container input:focus {
+    outline: none;
+    border: 1px solid #2EC4B6;
+
+}
