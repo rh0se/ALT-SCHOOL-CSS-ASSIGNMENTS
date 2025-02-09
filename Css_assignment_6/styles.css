@@ -66,6 +66,24 @@ h2 {
     margin: 8px auto 0;
 }
 
+h4 {
+    font-family: 'Gilroy-Bold';
+}
+
+.why-p {
+    font-family: Gilroy-Medium;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
+
+h3 {
+    font-family: Gilroy-Bold;
+    font-size: 40px;
+    line-height: 32px;
+    letter-spacing: 0%;
+}
+
 .number-group-1 {
     font-family: Gilroy-Bold;
     font-size: 32px;
