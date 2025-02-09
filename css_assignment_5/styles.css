@@ -1,0 +1,382 @@
+body {
+    background-color: #F5F8FA;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    padding: 30px 0;
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #E0E6EA;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-item {
+    text-align: center;
+    color: #1D2C3C;
+    font-size: 14px;
+    line-height: 16.8px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+
+.account-nav {
+    padding: 11px 19px;
+    border: 2px solid #646E7A;
+    border-radius: 6px;
+}
+
+.wrapper {
+    margin: 85px auto 0;
+    gap: 40px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 892px;
+    box-shadow: 0px 5px 15px 0px #0000000D;
+    box-shadow: 0px 15px 35px 0px #2B404E18;
+}
+
+.form-container {
+    padding: 41px 0 40px 48px;
+}
+
+form h1 {
+    font-family: 'Lato', sans-serif;
+    color: #1D2C3C;
+    margin: 0;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0px;
+    height: 80px;
+    width: 100%;
+    border-bottom: 2px solid #F5F7FA;
+
+}
+
+.basic-container,
+.payment-section {
+    margin-top: 34px;
+    border-bottom: 2px solid #F5F7FA;
+    padding-bottom: 40px;
+}
+
+.basic-header,
+.payment-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.basic-header p,
+.payment-header p {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #548BC5;
+    width: 30px;
+    color: #548BC5;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: -0.14px;
+    text-align: center;
+}
+
+.basic-header h2,
+.payment-header h2 {
+    margin: 0;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.6px;
+    letter-spacing: -0.16px;
+    color: #1D2C3C;
+}
+
+.name-container {
+    margin-top: 9px;
+    display: flex;
+    gap: 30px;
+}
+
+.text-container {
+    width: 227px;
+    gap: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.email-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 9px;
+    width: 370px;
+}
+
+label {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+    letter-spacing: 0px;
+    color: #1D2C3C;
+}
+
+input {
+    border: none;
+    background: #EDEFF2;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+    letter-spacing: 0px;
+    padding: 9px 13px;
+}
+
+input::placeholder {
+    font-family: 'Lato';
+    color: #646E7A;
+}
+
+.card-wrapper {
+    font-family: 'Lato';
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-wrapper input {}
+
+.expiry-wrapper {
+    display: flex;
+}
+
+.expiry-wrapper input {
+    width: 70px;
+}
+
+.expiry-wrapper input::placeholder {
+    text-align: right;
+}
+
+.payments-inputs {
+    margin-top: 20px;
+    display: flex;
+    align-items: end;
+    width: 483px;
+}
+
+.payment-section {
+    margin: 4px auto 0;
+}
+
+.purchase-section button {
+    padding: 13px 0;
+    margin: auto;
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.6px;
+    letter-spacing: -0.4px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    width: 483px;
+    background: #038E7D;
+}
+
+.support {
+    margin: 24px auto 0;
+    width: 333px;
+    display: flex;
+    justify-content: center;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+    letter-spacing: -0.01px;
+    color: #646E7A;
+    gap: 5px;
+}
+
+.support img {
+    height: 20px;
+}
+
+.support p span {
+    color: #1D2C3C;
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.8px;
+    letter-spacing: -0.01px;
+}
+
+.stripe-logo {
+    width: 483px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.stripe-logo img {
+    margin: auto;
+}
+
+.details-container {
+    color: #FFFFFF;
+    background: #1179BF;
+    width: 35%;
+    padding: 42px 44px;
+}
+
+.plan-section h1 {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.01px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.price p {
+    align-self: flex-start;
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.01px;
+    margin: 0;
+}
+
+.plan-info {
+    margin-top: 3px;
+    font-family: Lato;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01px;
+}
+
+.price span {
+    align-self: self-end;
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.6px;
+    letter-spacing: -0.01px;
+}
+
+p {
+    margin: 0;
+}
+
+.plan-details {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.plan-details div {
+    gap: 15px;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01px;
+    display: flex;
+    align-items: center;
+}
+
+.plan-details div img {
+    width: 20px;
+    height: 20px;
+}
+
+.switch {
+    margin-top: 38px;
+    display: flex;
+    flex-direction: column;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: -0.01px;
+    gap: 10px;
+}
+
+.quote {
+    margin-top: 40px;
+    border-top: 2px solid #FFFFFF;
+
+}
+
+.quote p {
+    padding-top: 40px;
+    font-family: Lato;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.01px;
+}
+
+.quote div {
+    display: flex;
+    margin-top: 15px;
+    gap: 15px;
+    align-items: center;
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: -0.01px;
+}
+
+.quote div p {
+    padding: 0;
+}
+
+/* .line-divide {
+    max-width: 1358px;
+    background: ;
+    height: 2px;
+    margin: auto;
+} */
+
+@media screen and (max-width: 768px) {
+    .nav-container {
+        display: none;
+    }
+
+    header {
+        display: block;
+        padding: 20px 0;
+        margin: 0 20px;
+    }
+}
