@@ -1,0 +1,81 @@
+@import url("./gilroy-bold-webfont/style.css");
+
+body {
+    font-family: "Gilroy-Regular", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container {
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 21.09px;
+    letter-spacing: 0%;
+    color: #141414;
+}
+
+button {
+    font-family: 'Gilroy-Bold';
+    gap: 10px;
+}
+
+.login {
+    font-family: 'Gilroy-Bold';
+    font-size: 16px;
+    line-height: 18.75px;
+    letter-spacing: 0%;
+}
+
+h1 {
+    font-family: 'Gilroy-Bold';
+    font-size: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+a {
+    cursor: pointer;
+}
+
+h2 {
+    font-family: 'Gilroy-Bold';
+    font-size: 40px;
+    line-height: 48px;
+}
+
+
+.banner-span {
+    color: #0065FE;
+    position: relative;
+}
+
+.banner-span::after {
+    content: url("./url-line.png");
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.banner-paragraph {
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #141414;
+    margin: 8px auto 0;
+}
+
+.number-group-1 {
+    font-family: Gilroy-Bold;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0%;
+}
+
+.number-group-2 {
+    font-family: Gilroy-Medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
