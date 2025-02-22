@@ -56,6 +56,14 @@ h2 {
     left: 25%;
 }
 
+@media (max-width: 950px) and (min-width: 789px) {
+    .banner-span::after {
+        left: 50%;
+        transform: translateX(-60%);
+    }
+}
+
+
 .banner-paragraph {
     font-family: Gilroy-Medium;
     font-size: 18px;
@@ -96,4 +104,164 @@ h3 {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0%;
+}
+
+.plans-wrapper {
+    display: flex;
+    margin: 68px auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.plan-title {
+    font-family: Gilroy-Medium;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    color: #141414;
+}
+
+.plan-title-professional {
+    font-family: Gilroy-Medium;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    color: #ffffff;
+}
+
+.plan-professional {
+    background: linear-gradient(180deg, #1E3448 99.99%, rgba(30, 52, 72, 0) 100%);
+    color: #ffffff;
+}
+
+.plan-professional div p {
+    margin-top: 8px;
+    margin-bottom: 24px;
+
+}
+
+.plan div p {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0%;
+}
+
+.plan {
+    border-radius: 12px;
+    padding: 24px 0 24px 87px;
+    width: min(379px, 90%);
+    height: 455px;
+    border: 0.4px solid #005AE2;
+    box-shadow: 0px 4px 8px 0px #0000000D;
+}
+
+.plan-professional {
+    padding: 85px 0 85px 65px;
+    border: none;
+    height: 627px;
+    width: min(410px, 90%);
+}
+
+.left {
+    margin-right: -40px;
+}
+
+.right {
+    margin-left: -40px;
+    z-index: -1;
+}
+
+.plan div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.plan div ul li {
+    display: flex;
+    font-family: Gilroy-Medium;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    align-items: center;
+    gap: 8px;
+}
+
+@media (max-width: 1111px) {
+
+    .right,
+    .left {
+        margin: 0;
+    }
+
+    .plans-wrapper {
+        gap: 60px;
+    }
+
+    .plan {
+        padding: 30px 50px;
+        height: fit-content;
+    }
+
+}
+
+@media (max-width: 349px) {
+    .plan {
+        padding: 20px;
+    }
+}
+
+.plan div {
+    margin-top: 34px;
+}
+
+.plan-professional div {
+    margin-top: 24px;
+}
+
+.plan div h5,
+.plan-professional div h5 {
+    font-family: Gilroy-Bold;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0%;
+}
+
+.plans-buttons {
+    font-family: Gilroy-Medium;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+}
+
+.plan-btn-1 {
+    color: #0065FE;
+    border: 1px solid #0065FE;
+}
+
+.plan-btn-2 {
+    border: none;
+    color: #ffffff;
+    background: #0065FE;
+}
+
+.plans-buttons button {
+    width: 200;
+    height: 48;
+    border-radius: 100px;
+    border-width: 1px;
+    gap: 10px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
 }
