@@ -421,6 +421,63 @@ h3 {
     }
 }
 
+.faqs-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-family: Gilroy-Bold;
+    font-size: 40px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    color: #141414;
+    margin-top: 43px;
+}
+
+.faqs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+        margin: auto !important;
+        width: min(792px, 90%);
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+details {
+    font-family: Gilroy-Medium;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    border-bottom: 1px solid #D6D6D6;
+
+    p {
+        padding-bottom: 16px;
+    }
+}
+
+summary {
+    display: flex !important;
+    font-family: Gilroy-Medium;
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+details[open] summary img {
+    content: url("./minus.png");
+}
+
 @media (max-width: 700px) {
     .url-form {
         padding: 30px;
